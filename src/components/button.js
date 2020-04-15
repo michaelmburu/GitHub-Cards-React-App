@@ -1,9 +1,16 @@
-import React, {Component} from './react';
+import React, { useState } from "react";
 
-
-function Button(){
-    return <div>Hello React!</div>;
+function Button(props){
+   
+    
+    const handleClick = () => props.onClick(props.increment);
+    return(
+    <div>
+        <button onClick={handleClick}>{props.increment}</button>
+    </div>
+    )
 }
 
-export default Button
 
+
+export default Button

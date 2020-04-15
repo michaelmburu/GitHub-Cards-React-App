@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Button from './components/button';
+import Github from './components/github';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button />
+    <Github title="The Github Cards App"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
